@@ -1,76 +1,171 @@
-html {
-    font-size: 62.5%
+/* -----------------------------------
+simple reset
+----------------------------------- */
+
+html, body, ul, ol, li, form, fieldset, legend
+{
+	margin: 0;
+	padding: 0;
 }
 
-body {
-    font: normal 100% Helvetica, Arial, sans-serif;
-    line-height:1.5;
+fieldset, img { border: 0; }
+legend { color: #000; }
+
+input, textarea, select, button
+{
+	font-size: 110%;
+	line-height: 1.1;
+	font-family: helvetica, arial, sans-serif;
 }
 
-p {
-    font: normal inherit 400 1em/1.5 Helvetica, Arial, sans-serif;
-    font-size:1em;
-    padding: 0.5em;
-}
-h1 {
-    font-size:1.5em;
-    padding:0.25em;
-}
-h2 {
-    font-size:2em;
-    padding:0.1875em;
-}
-h3 {
-    font-size:3em;
-    padding:0.125;
+button
+{
+	width: auto;
+	overflow: visible;
 }
 
-.column1 {
-    /*float:left;*/
-    width:60.80339887%;
-    display: inline;
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.column2 {
-    /* float:right; */
-    width:37.1966012%;
-    display: inline;
+caption, th, td
+{
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
 }
 
-.boxoutline {
-    border: solid red 1px;
+ul li { list-style: none; }
+
+abbr, acronym
+{
+	border-bottom: .1em dotted;
+	cursor: help;
 }
 
-.pagetitle {
-    z-index: 10;
-    background-color: white;
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+
+pre, code
+{
+	font-family: "Courier New", monospace, serif;
+	font-size: 100%;
+	line-height: 1.2;
 }
 
-.centretext {
+/* -----------------------------------
+elements
+----------------------------------- */
+
+body
+{
+	color: #000;
+	background: #fff;
+	font: 90%/1 "DejaVu Sans", "URW Gothic L", "Helvetica Neue", Helvetica, Arial, "Microsoft Sans Serif", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	margin: 0 0 .5em;
+	color: #c40000;
+}
+
+h1 { font-size: 200%; }
+h2 { font-size: 180%; }
+h3 { font-size: 160%; }
+h4 { font-size: 140%; }
+h5 { font-size: 120%; }
+h6 { font-size: 100%; }
+
+p
+{
+	margin: 0 0 1.5em;
+	line-height: 1.4;
+}
+
+a:link { color: #0f3163; }
+a:visited { color: #04214b; }
+
+a:focus
+{
+	color: #000;
+	outline: thin dotted;
+}
+
+a:hover { color: #000; }
+a:active { color: red; }
+
+.content ol
+{
+	line-height: 1.4;
+	padding: 0 0 1.5em 40px;
+}
+
+.content ul
+{
+	line-height: 1.4;
+	padding: 0 0 1.5em 20px;
+}
+
+.content li { margin: 0 0 .3em; }
+
+.content ul li
+{
+	padding: 0 0 0 20px;
+	background: url(../images/bullet.gif) no-repeat 0 .3em;
+}
+
+.container {
+    width:100%;
+    margin:0 auto;
     text-align: center;
-}
-.headbox {
-    width:100%;
-    height:300px;
-    float:left;
+    background: purple;
 }
 
-.bodysmallbox {
-    width:100%;
-    height: 300px;
+.gallerypic {
+    min-height: 200px;
+    max-width: 300px;
+    display: inline;
 }
 
-.boxyellow {
-    background-color: yellow;
-    color: black;
+
+.sliderarrowholder {
+    min-height: 200px;
+    width:40px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: auto;
 }
 
-.boxgreen {
-    background-color: green;
-    color: orange;
+.pullleft {
+    float: left;
+}
+.pullright {
+    float: right;
+}
+.sliderarrow {
+    width: 40px;
+    height: 40px;
+    background: grey;
+    border-radius: 20px;
+    margin-top:80px;
 }
 
-.boxblue {
-    background-color: lightblue;
-    color: purple;
+
+/*
+ *Sections
+ */
+
+.header {
+    background: red;
+}
+
+.content {
+    background: lightblue;
+}
+
+.gallery {
+    background: green;
 }
